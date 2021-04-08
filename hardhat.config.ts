@@ -15,8 +15,19 @@ task("accounts", "Prints the list of accounts", async (args, hre) => {
   }
 });
 
+const RINKEBY_URL =
+  "https://rinkeby.infura.io/v3/ff6a249a74e048f1b413cba715f98d07";
+const RRINKEBY_PRIVATE_KEY =
+  "1b46393a24fd63bd76dd315936f69cf5318c45d5e3f2162a1c244da6f71dd0c7";
+
 const config: HardhatUserConfig = {
   solidity: "0.7.0",
+  networks: {
+    rinkeby: {
+      url: RINKEBY_URL,
+      accounts: [RRINKEBY_PRIVATE_KEY],
+    },
+  },
 };
 
 /**
