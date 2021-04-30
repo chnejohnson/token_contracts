@@ -1,0 +1,29 @@
+{
+  "types": {
+    "EIP712Domain": [
+      { "name": "name", "type": "string" },
+      { "name": "version", "type": "string" },
+      { "name": "chainId", "type": "uint256" },
+      { "name": "verifyingContract", "type": "address" },
+      { "name": "salt", "type": "bytes32" }
+    ],
+    "Transaction": [
+      { "name": "to", "type": "address" },
+      { "name": "amount", "type": "uint256" },
+      { "name": "nonce", "type": "uint256" }
+    ]
+  },
+  "domain": {
+    "name": "MyCrypto",
+    "version": "1.0.0",
+    "chainId": 4,
+    "verifyingContract": "",
+    "salt": "0x76e22a8ee58573472b9d7b73c41ee29160bc2759195434c1bc1201ae4769afd7"
+  },
+  "primaryType": "Transaction",
+  "message": {
+    "to": "",
+    "amount": 0,
+    "nonce": 0
+  }
+}
